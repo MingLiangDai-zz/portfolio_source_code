@@ -1,0 +1,64 @@
+@import "~bootstrap/scss/bootstrap";
+
+.hero {
+  padding: 1rem 1rem;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &-title {
+    font-size: 4rem;
+  }
+
+  a {
+    overflow: hidden;
+  }
+}
+
+#ink {
+  height: 100%;
+  width: 200%;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  opacity: 0.2;
+  z-index: -100;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 0.25rem solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 5rem;
+  }
+}
+
+.linkText {
+  display: inline;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero {
+    min-height: 70vh;
+
+    &-title {
+      font-size: 3rem;
+    }
+  }
+}
