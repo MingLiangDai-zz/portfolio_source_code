@@ -1,5 +1,3 @@
-import "./scss/index";
-
 import anime from "animejs/lib/anime.es";
 
 const linkTextContent = ["GitHub", "LinkedIn", "Resume", "Email"];
